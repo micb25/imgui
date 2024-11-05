@@ -1143,7 +1143,7 @@ bool    ImGui_ImplVulkan_Init(ImGui_ImplVulkan_InitInfo* info)
     IM_ASSERT(info->Device != VK_NULL_HANDLE);
     IM_ASSERT(info->Queue != VK_NULL_HANDLE);
     IM_ASSERT(info->DescriptorPool != VK_NULL_HANDLE);
-    IM_ASSERT(info->MinImageCount >= 2);
+    IM_ASSERT(info->ImageCount >= 2);
     IM_ASSERT(info->ImageCount >= info->MinImageCount);
     if (info->UseDynamicRendering == false)
         IM_ASSERT(info->RenderPass != VK_NULL_HANDLE);
